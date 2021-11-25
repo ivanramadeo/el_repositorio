@@ -1,0 +1,466 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+html{
+  font-size: 62.5%;
+  
+}
+a{
+  text-decoration: none;
+}
+/*Clase contenedor body*/
+.container {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,auto);
+  grid-template-areas: "Header" "MainImg" "Enlaces" "Footer";
+  justify-content: center;
+  align-content:center ;
+}
+/*clase del header*/
+.Header {
+  grid-area: Header;
+  display:flex;
+  background-color: rgb(41,37,36);
+  width: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Header div a{
+  display: flex;
+}
+  #logo { 
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Clase de la Nav*/
+  .Nav { 
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+    /*Botonera*/
+    .Lista{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: auto;
+    }
+      .Lista li{
+        display: flex;
+        width: 25%;
+        justify-content: space-evenly;
+        
+      }
+        .Lista li a{
+          color: rgb(117, 115, 115);
+          background-color: white;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1.4rem;
+          margin: 1px;
+          padding: 2px;
+          border: 1px solid rgb(117, 115, 115);
+          
+          text-align: center;
+          width: 100%;
+        }
+/*Imagen principal*/
+.MainImg { 
+  grid-area: MainImg; 
+  display: flex;
+  flex-direction: column;
+
+  
+}
+  /*Titulo principal*/
+  .titulo{
+    color: rgb(117, 115, 115);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+  }
+  #ImagenPrincipal{
+    width: 100vw;
+  }
+    /*Clase titulos secundarios*/
+    .tituloSec{
+      color: rgb(117, 115, 115);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      font-size: 2rem;
+    }
+/*Clase Enlaces a Secciones*/
+.Enlaces{
+  grid-area: Enlaces;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgb(216, 213, 213);
+}
+    .Enlace1 { 
+    background-color: rgb(216, 213, 213);
+    text-align: center;
+  }
+      .Enlace1 img{
+        width: 95vw;
+      }
+    
+  
+    .Enlace2 {
+      background-color: rgb(216, 213, 213);
+      text-align: center;
+    }
+      .Enlace2 img{
+        width: 95vw;
+      }
+    .Enlace3 { 
+      background-color: rgb(216, 213, 213);
+      text-align: center;
+    }
+      .Enlace3 img{
+      width: 95vw;
+    }
+/*Estilo de las imagenes*/
+.imgStyle{
+  color: rgb(117, 115, 115);
+  border-radius: 10px;
+}
+  /*Estilo del footer*/
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 0.5fr 1fr;
+  grid-template-areas:
+    "Up"
+    "SocialMedia"
+    "Address";
+  grid-area: Footer;
+  
+}
+
+  .SocialMedia { 
+      grid-area: SocialMedia;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(41,37,36);
+      color:rgb(197, 197, 197);
+      text-align: center;
+      font-size:  1rem;
+      letter-spacing: 1rem;
+  }
+  .SocialMedia a {
+      color: rgb(190, 188, 188);
+      width: auto;
+      height: auto;
+  }
+  
+
+  .Address { 
+      grid-area: Address;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(41,37,36);
+      color:rgb(197, 197, 197);
+      text-align: center;
+      font-weight: 300;
+      font-size: 1rem;;
+  }
+
+  .Up { 
+      grid-area: Up;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(41,37,36);
+      color:rgb(197, 197, 197);
+      text-align: center;
+      font-size: 1rem;;
+  }
+
+/*Media querie pantalla 1*/
+@media only screen and (min-width: 768px){
+  /*Estilo body*/
+  .container {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 6fr 3.5fr 1.5fr ;
+    grid-template-areas: "Header Header" "MainImg MainImg" "Enlaces Enlaces" "Footer Footer";
+    
+} 
+#ImagenPrincipal{
+  width: 100%;
+}
+/*Estilo de los enlaces secciones*/
+.Enlaces{
+  grid-area: Enlaces;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+  .Enlace1 {
+    width: 30vw;
+  }
+    .Enlace1 img{
+      width: 100%;
+    }
+  .Enlace2 {
+    width: 30vw;
+  }
+    .Enlace2 img{
+      width: 100%;
+    }
+  .Enlace3 {
+    width: 30vw;
+  }
+    .Enlace3 img{
+      width: 100%;
+    }
+
+/*Estilos del Footer*/
+.Up { 
+  font-size: 3rem;
+  
+}
+.SocialMedia { 
+  font-size:  3rem;
+  
+}
+
+.Address { 
+  font-size: 1.5rem;;
+}
+
+
+}
+
+/*Media querie pantalla 1*/
+@media only screen and (min-width: 1200px){
+  /*Estilo body*/
+  .container {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.2fr 2.2fr 1fr 0.4fr ;
+    grid-template-areas: "Header Header Header" "MainImg MainImg MainImg" "Enlaces Enlaces Enlaces" "Footer Footer Footer";;
+    
+}
+/*Estilo header*/
+.Header {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+  .Header div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+    #logo { 
+      width: 50%;
+    }
+  .Nav { 
+    width: 60%;
+    
+  }
+    .Lista{
+      width: 100%;
+    }
+      
+        .Lista li a{
+          
+          font-size: 2.5rem;
+          
+        }
+/*Estilo main imagen principal home*/
+#ImagenPrincipal{
+  width: 100%;
+}
+/*Estilo Main Nosotros*/
+.MainNos{
+  display: grid;
+  grid-template-columns: repeat(2,fr);
+  grid-template-rows: 0.8fr 3fr;
+  grid-template-areas: "Titulo Titulo" "Texto Imagen";
+  
+
+}
+.Titulo{
+  grid-area: Titulo;
+}
+.Texto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: Texto;
+  width: 100%;
+}
+.estiloTexto{
+  color: rgb(117, 115, 115);
+  line-height: 2.4rem;
+  letter-spacing: 1px;
+  word-spacing: 2px ;
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+.Imagen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: Imagen;
+}
+
+/*Estilo Main Trabajo*/
+.MainTrab{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 3fr;
+  grid-template-areas: "Titulo Titulo" "Video TextoTrab";
+  margin: 5px;
+  justify-content: center;
+}
+.Titulo{
+  align-self: center;
+  grid-area: Titulo;
+}
+.TextoTrab{
+  grid-area: TextoTrab;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+.tex-Trab{
+  color: rgb(117, 115, 115);
+  line-height: 3rem;
+  letter-spacing: 1px;
+  word-spacing: 2px ;
+  font-size: 2rem;
+  text-align: center;
+
+}
+.Video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: Video;
+}
+  .Video video{
+    width: 100%;
+  }
+
+/*Estilo Main Contacto*/
+.MainContacto{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 3fr;
+  grid-template-areas: "Titulo" "Formulario";
+  margin: 5px;
+  justify-content: center;
+}
+.Titulo{
+  align-self: center;
+  grid-area: Titulo;
+}
+.Formulario{
+  grid-area: Formulario;
+  margin: 30px;
+  text-align: center;
+}
+/*Estilo Main Tienda*/
+.MainTienda{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(rgb(89, 0, 255) , rgb(255, 0, 157));
+  height: 400px;
+}
+.Titulo{
+  align-self: center;
+  grid-area: Titulo;
+  color: black;
+  grid-area: Titulo;
+}
+.Promociones{
+  color: black;
+  grid-area: Promociones;
+}
+.logoGrande{
+  transform: rotate(2deg);
+  width: 150px;
+  
+}
+/*Estilo enlaces*/
+.Enlaces{
+  grid-area: Enlaces;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  
+}
+  .Enlace1 {
+    width: 30vw;
+  }
+    .Enlace1 img{
+      width: 100%;
+    }
+  .Enlace2 {
+    width: 30vw;
+  }
+    .Enlace2 img{
+      width: 100%;
+    }
+  .Enlace3 {
+    width: 30vw;
+  }
+    .Enlace3 img{
+      width: 100%;
+    }
+/*Estilo footer*/
+.Footer{
+  width: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.Up { 
+  font-size: 2.5rem;
+  
+}
+.SocialMedia { 
+  font-size:  5rem;
+  
+}
+
+.Address { 
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5rem;
+  justify-content: center;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+
+
+}
+

@@ -1,0 +1,49 @@
+/*Estilos del footer*/
+
+
+.SocialMedia { 
+    grid-area: SocialMedia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    color:$secondary;
+    text-align: center;
+    font-size:  5rem;
+    
+    letter-spacing: 1rem;
+    a{
+        color: $fifth;
+        width: auto;
+        height: auto;
+    }
+    
+
+}
+
+
+.Address { 
+    grid-area: Address;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    color:$secondary;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.5rem;
+    
+}
+
+.Up { 
+    grid-area: Up;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    color:$secondary;
+    text-align: center;
+    font-size: 2.5rem;
+    
+}

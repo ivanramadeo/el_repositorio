@@ -1,0 +1,29 @@
+
+$colorpersonalizado:rgb(224, 140, 140);
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark,
+    "personalizado": $colorpersonalizado
+    );
+    
+    
+
+// scss-docs-start btn-variant-loops
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+        border-color: blueviolet;
+        border-radius: 25px;
+        &:hover{
+            color: $secondary;
+        }
+    }
+}

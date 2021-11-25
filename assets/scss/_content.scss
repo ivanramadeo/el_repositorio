@@ -1,0 +1,159 @@
+
+//Estilos index.html
+/*Color titulo principal*/
+.titulo{
+    color: $third;
+    /*Estilo de titulos secundarios*/
+        .tituloSec{
+            color: $third;
+            font-family: $secondaryFont;
+            font-weight: 600;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        /*Estilo de los textos*/
+        .texto{
+            color: $third;
+            line-height: 4rem;
+            letter-spacing: 1px;
+            word-spacing: 2px ;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+}
+
+
+    
+/*Color Enlaces a Secciones*/
+.Enlaces{
+    background-color:$fourth;
+}
+    
+    
+/*Estilo de las imagenes*/
+.imgStyle{
+    border-radius: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,fr);
+    grid-template-rows: 0.8fr 3fr;
+    grid-template-areas: "Titulo Titulo" "Texto Imagen";
+        .titulo{
+            grid-area: Titulo;
+            text-align: center;
+            font-family:$secondaryFont;
+        }
+        .Texto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: Texto;
+            width: 100%;
+        }
+        .texto{
+        color: $third;
+        line-height: 2.4rem;
+        letter-spacing: 1px;
+        word-spacing: 2px ;
+        font-size: 1rem;
+        text-align: center;
+    
+    }
+    .Imagen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: Imagen;
+    }  
+}
+
+//Estilos nosotros.html
+/*--------------------Main------------------*/  
+.Main_Titulo{
+    text-align: center;
+    color: rgb(117, 115, 115);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+/*--------------------Principal----------------*/
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px;
+}
+    /*--------------Parrafo------------*/
+    .principal__Parrafo{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .principal__Parrafo--colors{
+        color: rgb(117, 115, 115);
+    }
+    .principal__Parrafo--estilo{
+        line-height: 2.4rem;
+        letter-spacing: 1px;
+        word-spacing: 2px ;
+    }
+    /*--------------Imagen------------*/
+    .principal__Imagen{
+        display: flex;
+        align-self: flex-end;
+        transform:scale(5,1); 
+        
+    }
+    .principal__Imagen--estilo{
+        border-radius: 10%;
+    }
+/*--------------------Secundario----------------*/  
+.secundario{
+display: flex;
+flex-direction: row;
+justify-content:space-around;
+align-items: center;
+padding: 10px;
+}
+    /*--------------Parrafo------------*/
+    .secundario__Parrafo{
+        font-size: 1rem;
+        text-align: right;
+        justify-content: end;
+    }
+    .secundario__Parrafo--colors{
+        color: rgb(117, 115, 115);
+    }
+    .secundario__Parrafo--estilo{
+        line-height: 2.4rem;
+        letter-spacing: 1px;
+        word-spacing: 2px ;
+    }
+    /*--------------Imagen------------*/
+    .secundario__Imagen{
+        display: flex;
+    }
+    .secundario__Imagen--estilo{
+        border-radius: 10%;
+        width: 400px;
+    }  
+
+//Estilos contacto.html
+//relleno
+#main{
+    padding: 8px;
+}
+//tamaño formulario
+.sizeForm{
+    width: 50%;
+}
+
+//subtitulo h2
+#subTitulo{
+    font-size: 1rem;
+    color: rgb(117, 115, 115);
+}
