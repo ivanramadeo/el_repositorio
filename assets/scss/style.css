@@ -11342,26 +11342,12 @@ a {
   font-size: 2rem;
 }
 
-/*--------------------Principal----------------*/
-.principal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-}
-
-/*--------------Parrafo------------*/
+/*--------------------Principal----------------*
+    /*--------------Parrafo------------*/
 .principal__Parrafo {
   font-size: 1rem;
   text-align: center;
-}
-
-.principal__Parrafo--colors {
   color: #757373;
-}
-
-.principal__Parrafo--estilo {
   line-height: 2.4rem;
   letter-spacing: 1px;
   word-spacing: 2px;
@@ -11369,36 +11355,20 @@ a {
 
 /*--------------Imagen------------*/
 .principal__Imagen {
-  display: flex;
-  align-self: flex-end;
-  transform: scale(5, 1);
+  width: 50%;
+  text-align: center;
 }
 
-.principal__Imagen--estilo {
+.principal_Imagen_estilo {
   border-radius: 10%;
 }
 
 /*--------------------Secundario----------------*/
-.secundario {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-}
-
 /*--------------Parrafo------------*/
 .secundario__Parrafo {
   font-size: 1rem;
-  text-align: right;
-  justify-content: end;
-}
-
-.secundario__Parrafo--colors {
+  text-align: center;
   color: #757373;
-}
-
-.secundario__Parrafo--estilo {
   line-height: 2.4rem;
   letter-spacing: 1px;
   word-spacing: 2px;
@@ -11406,12 +11376,9 @@ a {
 
 /*--------------Imagen------------*/
 .secundario__Imagen {
-  display: flex;
-}
-
-.secundario__Imagen--estilo {
+  text-align: center;
   border-radius: 10%;
-  width: 400px;
+  width: 75%;
 }
 
 #main {
@@ -11425,4 +11392,39 @@ a {
 #subTitulo {
   font-size: 1rem;
   color: #757373;
+}
+
+.contenedor {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "caja1 caja2 caja3" "caja4 caja5 caja6";
+  padding: 10px;
+}
+
+.caja1 {
+  grid-area: caja1;
+}
+
+.caja2 {
+  grid-area: caja2;
+}
+
+.caja3 {
+  grid-area: caja3;
+}
+
+.caja4 {
+  grid-area: caja4;
+}
+
+.caja5 {
+  grid-area: caja5;
+}
+
+.caja6 {
+  grid-area: caja6;
 }/*# sourceMappingURL=style.css.map */
