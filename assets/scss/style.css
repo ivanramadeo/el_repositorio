@@ -11345,8 +11345,7 @@ a {
 /*--------------------Principal----------------*
     /*--------------Parrafo------------*/
 .principal__Parrafo {
-  font-size: 1rem;
-  text-align: center;
+  font-size: 0.75rem;
   color: #757373;
   line-height: 2.4rem;
   letter-spacing: 1px;
@@ -11356,18 +11355,17 @@ a {
 /*--------------Imagen------------*/
 .principal__Imagen {
   width: 50%;
-  text-align: center;
 }
 
 .principal_Imagen_estilo {
   border-radius: 10%;
+  margin: 10px;
 }
 
 /*--------------------Secundario----------------*/
 /*--------------Parrafo------------*/
 .secundario__Parrafo {
-  font-size: 1rem;
-  text-align: center;
+  font-size: 0.75rem;
   color: #757373;
   line-height: 2.4rem;
   letter-spacing: 1px;
@@ -11376,7 +11374,6 @@ a {
 
 /*--------------Imagen------------*/
 .secundario__Imagen {
-  text-align: center;
   border-radius: 10%;
   width: 75%;
 }
@@ -11386,12 +11383,19 @@ a {
 }
 
 .sizeForm {
-  width: 50%;
+  width: 75%;
 }
 
 #subTitulo {
   font-size: 1rem;
   color: #757373;
+}
+
+.btn-color {
+  background-color: #c5c5c5;
+}
+.btn-color a {
+  color: #292524;
 }
 
 .contenedor {
@@ -11427,4 +11431,8 @@ a {
 
 .caja6 {
   grid-area: caja6;
+}
+
+.img-foto {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

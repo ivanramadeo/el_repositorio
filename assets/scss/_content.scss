@@ -84,8 +84,8 @@
 /*--------------------Principal----------------*
     /*--------------Parrafo------------*/
     .principal__Parrafo{
-        font-size: 1rem;
-        text-align: center;
+        font-size: 0.75rem;
+        
         color: rgb(117, 115, 115);
         line-height: 2.4rem;
         letter-spacing: 1px;
@@ -94,16 +94,20 @@
     /*--------------Imagen------------*/
     .principal__Imagen{
         width: 50%;
-        text-align: center;}
+        
+        
+        
+    }
     .principal_Imagen_estilo{
         border-radius: 10%;
+        margin:10px;
     }
 /*--------------------Secundario----------------*/  
 
     /*--------------Parrafo------------*/
     .secundario__Parrafo{
-        font-size: 1rem;
-        text-align: center;
+        font-size: 0.75rem;
+        
         
         color: rgb(117, 115, 115);
         line-height: 2.4rem;
@@ -112,7 +116,7 @@
     }
     /*--------------Imagen------------*/
     .secundario__Imagen{
-        text-align: center;
+        
         border-radius: 10%;
         width: 75%;
     }  
@@ -121,16 +125,26 @@
 //relleno
 #main{
     padding: 8px;
+    
 }
 //tamaño formulario
 .sizeForm{
-    width: 50%;
+    width: 75%;
 }
 
 //subtitulo h2
 #subTitulo{
     font-size: 1rem;
     color: rgb(117, 115, 115);
+}
+
+//color boton submit
+.btn-color{
+    background-color: $secondary;
+    
+    a{
+        color: $primary;
+    }
 }
 
 //Estilo tienda.html
