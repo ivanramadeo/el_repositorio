@@ -1,7 +1,7 @@
 /*Estilos del footer*/
 
 
-.SocialMedia { 
+.ClaseSocialMedia{ 
     grid-area: SocialMedia;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
     background-color: $primary;
     color:$secondary;
     text-align: center;
-    font-size: calc(5rem - 3.3vw);
+    font-size:  5rem;
     
     letter-spacing: 1rem;
     a{
@@ -22,7 +22,7 @@
 }
 
 
-.Address{ 
+.ClaseAddress { 
     grid-area: Address;
     display: flex;
     flex-direction: column;
@@ -32,19 +32,16 @@
     color:$secondary;
     text-align: center;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 2.5rem;
     
 }
-span{
-    font-weight: bold;
-}
 
-.Up { 
+.claseUp { 
     grid-area: Up;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $primary;
+    
     color:$secondary;
     text-align: center;
     font-size: 2.5rem;
