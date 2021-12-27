@@ -5,13 +5,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <!-- Mi CSS -->
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!---------- Mi CSS --------->
         <link rel="stylesheet" href="assets/scss/style.css">
+        <!--Font awesomw-->
         <script src="https://kit.fontawesome.com/ac5f1e6c4f.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com"><!--Api Google Fonts lineas 9,10 y 11-->
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@100;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
         <title>Yanfer Contacto</title>
         <meta name="description" content="en esta pagina se podrá contactar con la empresa y además suscribirse para recibir ofertas, promociones y descuentos">
         <meta name="keywords" content="diseño, gráfico, personalizado, sublimación, contacto, Newsletter, ofertas, promociones descuentos">
@@ -20,77 +24,80 @@
     </head>
     <body>
          <!--Inicia Nav-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-Color">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="assets/img/logo_grande.svg" alt="logo" class="w-50"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 Lista">
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="trabajos.html">Trabajos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="tienda.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="contacto.html">Contacto</a>
-              </li>
-            </ul>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-Color">
+          <div class="container-fluid text-center text-sm-center ">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/logo_grande.svg" alt="logo" class="w-50"></a>
             
+            <div class="text-end">
+              <button class="navbar-toggler text-center text-sm-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav text-center ms-auto mb-2 mb-lg-0 Lista">
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="trabajos.html">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              
+            </div>
           </div>
-        </div>
-    </nav>
+      </nav>
     <!--Inicia Main-->
-        <main class="container-fluid d-flex flex-column justify-content-center align-items-center" id="main">
+        <main class="container-fluid d-flex flex-column " id="main">
+          
           <h1 class="Main_Titulo animate__animated animate__wobble">Suscribite</h1> <h2 id="subTitulo" class="text-center">a nuestro Newsletter y recibí las mejores promociones</h2>
           
-          <form class="row g-3 sizeForm ">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
+          
+            <div class="row  " >
+              <section class="col-lg-6" >
+                <form class="row g-3  " >
+                  <div class="col-md-6" >
+                    <label for="firstName" class="form-label textoForm">Nombre</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                  </div>
+                  <div class="col-md-6" >
+                    <label for="lastName" class="form-label textoForm">Apellido</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                  </div>
+                  <div class="col-md-12" >
+                    <label for="inputEmail4" class="form-label textoForm">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" required>
+                  </div>
+                  <div class="col-12" >
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label textoForm " for="gridCheck">
+                        Acepto recibir notificaciones de promociones por email.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center" >
+                    <button type="submit" class="btn btn-color" ><a href="error404.html">Suscribirme!</a></button>
+                  </div>
+                </form>
+              </section>
+              <section class="row  col-lg-6  " >
+                  <div class="  text-center col-md-6 col-lg-4  col" ><button type="submit" class="btn w-100  redesFb p-3" ><a href=""><i class="fab fa-facebook-square"></i></a></button></div>
+                  <div class="  text-center col-md-6 col-lg-4 col" ><button type="submit" class="btn w-100 redesIg p-3" ><a href=""><i class="fab fa-instagram-square"></i></a></button></div>
+                  <div class="  text-center col-md-6 col-lg-4  col " ><button type="submit" class="btn w-100 redesWpp p-3" ><a href=""><i class="fab fa-whatsapp-square"></i></a></button></div>
+                  <div class="  text-center col-md-6 col-lg-12  col" ><button type="submit" class="btn w-100 redesPhone p-3" ><a href=""><i class="fas fa-phone-square-alt"></i></a></button></div>
+                  
+              </section>
             </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Dirección</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Calle 1234">
-            </div>
-            
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">Localidad</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">Provincia</label>
-              <select id="inputState" class="form-select">
-                <option selected>Elegir...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Codigo Postal</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Acepto recibir notificaciones de promociones por email.
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-color" ><a href="error404.html">Suscribirme!</a></button>
-            </div>
-          </form>
         </main>
+        <aside class="row">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.9335419129596!2d-55.12011337079827!3d-27.47753419893047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f8f54160682945%3A0x3be2600ffdb76d3d!2sSgto.%20Cabral%20450%2C%20Ober%C3%A1%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1640609972737!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+        </aside>
 
        <!--Inicia Footer-->
        <footer class="bg-Color d-flex">
@@ -106,7 +113,7 @@
             </ul>
             
           <ul class="col-lg-12 list-unstyled Address d-flex" >
-              <li><h4 class="Address "><span>Dirección:</span>Sargento Cabral 475, Obera, Misiones</h4></li>
+              <li><h4 class="Address "><span>Dirección:</span>Sargento Cabral 450, Obera, Misiones</h4></li>
               <li><h4 class="Address"><span>Telefono:</span>03755-777777</h4></li>
           </ul>
           

@@ -1,5 +1,5 @@
 
-//Estilos index.html
+//**********************************************************Estilos index.html****************************
 /*Color titulo principal*/
 .titulo{
     color: $third;
@@ -71,7 +71,7 @@
     }  
 }
 
-//Estilos nosotros.html
+//*********************************************************************Estilos nosotros.html****************************
 
 /*--------------------Main------------------*/  
 .Main_Titulo{
@@ -84,8 +84,7 @@
 /*--------------------Principal----------------*
     /*--------------Parrafo------------*/
     .principal__Parrafo{
-        font-size: 0.75rem;
-        
+        font-size: calc(0.5rem + 1vw);
         color: rgb(117, 115, 115);
         line-height: 2.4rem;
         letter-spacing: 1px;
@@ -106,9 +105,7 @@
 
     /*--------------Parrafo------------*/
     .secundario__Parrafo{
-        font-size: 0.75rem;
-        
-        
+        font-size: calc(0.5rem + 1vw);
         color: rgb(117, 115, 115);
         line-height: 2.4rem;
         letter-spacing: 1px;
@@ -121,7 +118,7 @@
         width: 75%;
     }  
 
-//Estilos contacto.html
+//**********************************************************************Estilos contacto.html*******************************
 //relleno
 #main{
     padding: 8px;
@@ -143,11 +140,50 @@
     background-color: $secondary;
     
     a{
-        color: $primary;
+        color: $third;
     }
 }
+.redesFb{
+    
+    font-size: 5rem;
+    a{
+        color: $secondary;
+        border-radius: 10%;
+        
+    }
+}
+.redesWpp{
+    font-size: 5rem;
+    
+    a{
+        color: $secondary;
+        border-radius: 10%;
+        
 
-//Estilo tienda.html
+    }
+}
+.redesIg{
+    
+    font-size: 5rem;
+    a{
+        color: $secondary;
+        border-radius: 10%;
+        
+    }
+}
+.redesPhone{
+    font-size: 5rem;
+    a{
+        color: $secondary;
+        border-radius: 10%;
+        
+    }
+}
+.textoForm{
+    color: $third;
+}
+
+//***********************************************************Estilo tienda.html****************************************
 .contenedor {
     display: grid; 
     grid-auto-columns: 1fr; 
@@ -171,4 +207,64 @@
 .img-foto{
     width: 100%;
     
+}
+.card-text{
+    overflow: hidden; 
+	text-overflow: ellipsis; 
+	display: -webkit-box; 
+	-webkit-line-clamp: 3; /* number of lines to show */ 
+	-webkit-box-orient: vertical;
+}
+
+//****************************************************Estilo trabajos**************
+.texto_carrusel{
+    font-size: calc(0.5rem + 1vw);
+    color: rgb(117, 115, 115);
+    line-height: 2.4rem;
+    letter-spacing: 1px;
+    word-spacing: 2px ;
+}
+
+.singleCol {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.accordion-button {
+    font-size: calc(0.6rem + 1vw);
+    color:$third;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    
+}
+
+.accordion-item {
+    border: 1px solid rgba(35, 65, 100, .15)
+}
+
+.accordion-button:not(.collapsed) {
+    color: $third;
+    background:$fifth ;
+    color:$third ;
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed)::after  {
+    filter: brightness(00%) invert(70%);
+}
+
+.accordion-button:focus {
+    box-shadow: inherit;
+}
+
+.accordion-body {
+    font-size: calc(0.6rem + 1vw);
+    color:$third ;
+    font-family: $mainFont;
+}
+
+@media (max-width: 767px) {
+    .accordion-body h3 {
+        font-size: calc(.95rem + 1.5vw);
+    }
 }
