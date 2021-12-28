@@ -1,174 +1,68 @@
 
 //**********************************************************Estilos index.html****************************
-/*Color titulo principal*/
-.titulo{
+
+/*Estilo de titulos secundarios*/
+.tituloSec{
     color: $third;
-    /*Estilo de titulos secundarios*/
-        .tituloSec{
-            color: $third;
-            font-family: $secondaryFont;
-            font-weight: 600;
-            text-align: center;
-            font-size: 2rem;
-        }
-
-        /*Estilo de los textos*/
-        .texto{
-            color: $third;
-            line-height: 4rem;
-            letter-spacing: 1px;
-            word-spacing: 2px ;
-            font-size: 2rem;
-            text-align: center;
-        }
-
+    font-family: $secondaryFont;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
 }
 
-
-    
 /*Color Enlaces a Secciones*/
 .Enlaces a{
     color:$third;
 }
-    
-    
+
 /*Estilo de las imagenes*/
 .imgStyle{
     border-radius: 10px;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(2,fr);
-    grid-template-rows: 0.8fr 3fr;
-    grid-template-areas: "Titulo Titulo" "Texto Imagen";
-        .titulo{
-            grid-area: Titulo;
-            text-align: center;
-            font-family:$secondaryFont;
-        }
-        .Texto{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            grid-area: Texto;
-            width: 100%;
-        }
-        .texto{
-        color: $third;
-        line-height: 2.4rem;
-        letter-spacing: 1px;
-        word-spacing: 2px ;
-        font-size: 1rem;
-        text-align: center;
-    
-    }
-    .Imagen{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-area: Imagen;
-    }  
-}
-
 //*********************************************************************Estilos nosotros.html****************************
 
-/*--------------------Main------------------*/  
-.Main_Titulo{
-    text-align: center;
-    color: rgb(117, 115, 115);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-}
-/*--------------------Principal----------------*
-    /*--------------Parrafo------------*/
-    .principal__Parrafo{
-        font-size: calc(0.5rem + 1vw);
-        color: rgb(117, 115, 115);
-        line-height: 2.4rem;
-        letter-spacing: 1px;
-        word-spacing: 2px ;
-    }
-    /*--------------Imagen------------*/
-    .principal__Imagen{
-        width: 50%;
-        
-        
-        
-    }
-    .principal_Imagen_estilo{
-        border-radius: 10%;
-        margin:10px;
-    }
-/*--------------------Secundario----------------*/  
 
-    /*--------------Parrafo------------*/
-    .secundario__Parrafo{
-        font-size: calc(0.5rem + 1vw);
-        color: rgb(117, 115, 115);
-        line-height: 2.4rem;
-        letter-spacing: 1px;
-        word-spacing: 2px ;
-    }
-    /*--------------Imagen------------*/
-    .secundario__Imagen{
-        
-        border-radius: 10%;
-        width: 75%;
-    }  
+/*--------------Imagen------------*/
+.principal__Imagen{
+    width: 60%;
+    border-radius: 10%;
+    margin:10px;
+    object-fit: fill;
+}
+.secundario__Imagen{
+    border-radius: 10%;
+    width: 75%;
+}  
 
 //**********************************************************************Estilos contacto.html*******************************
-//relleno
-#main{
-    padding: 8px;
-    
-}
-//tamaño formulario
-.sizeForm{
-    width: 75%;
-}
+
 
 //subtitulo h2
 #subTitulo{
     font-size: 1rem;
     color: rgb(117, 115, 115);
 }
-
-//color boton submit
-.btn-color{
-    background-color: $secondary;
-    
-    a{
-        color: $third;
-    }
-}
+//Estilos de botones a redes sociales y llamada
 .redesFb{
-    
     font-size: 5rem;
     a{
         color: $secondary;
         border-radius: 10%;
-        
     }
 }
 .redesWpp{
     font-size: 5rem;
-    
     a{
         color: $secondary;
         border-radius: 10%;
-        
-
     }
 }
 .redesIg{
-    
     font-size: 5rem;
     a{
         color: $secondary;
         border-radius: 10%;
-        
     }
 }
 .redesPhone{
@@ -176,60 +70,27 @@
     a{
         color: $secondary;
         border-radius: 10%;
-        
     }
 }
-.textoForm{
-    color: $third;
-}
 
+.row{
+    margin: 0;
+}
 //***********************************************************Estilo tienda.html****************************************
-.contenedor {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 10px 10px; 
-    grid-template-areas: 
-    "caja1 caja2 caja3"
-    "caja4 caja5 caja6";
-    padding: 10px; 
-}
-.caja1 { grid-area: caja1; }
-.caja2 { grid-area: caja2; }
-.caja3 { grid-area: caja3; }
-.caja4 { grid-area: caja4; }
-.caja5 { grid-area: caja5; }
-.caja6 { grid-area: caja6; }
 
-//Estilo imagenes tienda
-.img-foto{
-    width: 100%;
-    
-}
+
+//Estilo de las cards
 .card-text{
     overflow: hidden; 
 	text-overflow: ellipsis; 
 	display: -webkit-box; 
-	-webkit-line-clamp: 3; /* number of lines to show */ 
+	-webkit-line-clamp: 2; /* number of lines to show */ 
 	-webkit-box-orient: vertical;
 }
 
+
 //****************************************************Estilo trabajos**************
-.texto_carrusel{
-    font-size: calc(0.5rem + 1vw);
-    color: rgb(117, 115, 115);
-    line-height: 2.4rem;
-    letter-spacing: 1px;
-    word-spacing: 2px ;
-}
-
-.singleCol {
-    max-width: 750px;
-    margin: 0 auto;
-}
-
+//Estilos del acordeon
 .accordion-button {
     font-size: calc(0.6rem + 1vw);
     color:$third;
@@ -263,8 +124,3 @@
     font-family: $mainFont;
 }
 
-@media (max-width: 767px) {
-    .accordion-body h3 {
-        font-size: calc(.95rem + 1.5vw);
-    }
-}
